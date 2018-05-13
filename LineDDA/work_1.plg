@@ -6,26 +6,19 @@
 --------------------Configuration: work_1 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Sttide\AppData\Local\Temp\RSP9A3E.tmp" with contents
+Creating temporary file "C:\Users\Sttide\AppData\Local\Temp\RSPC7FD.tmp" with contents
 [
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/work_1.pdb" /debug /machine:I386 /out:"Debug/work_1.exe" /pdbtype:sept 
-".\Debug\cache.obj"
-".\Debug\MidPoint.obj"
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/work_1.pdb" /debug /machine:I386 /out:"Debug/work_1.exe" /pdbtype:sept 
+.\Debug\cache.obj
 ]
-Creating command line "link.exe @C:\Users\Sttide\AppData\Local\Temp\RSP9A3E.tmp"
+Creating command line "link.exe @C:\Users\Sttide\AppData\Local\Temp\RSPC7FD.tmp"
 <h3>Output Window</h3>
 Linking...
-MidPoint.obj : error LNK2005: "void __cdecl init(void)" (?init@@YAXXZ) already defined in cache.obj
-MidPoint.obj : error LNK2005: "void __cdecl RenderScene(void)" (?RenderScene@@YAXXZ) already defined in cache.obj
-MidPoint.obj : error LNK2005: "void __cdecl ChangeSize(int,int)" (?ChangeSize@@YAXHH@Z) already defined in cache.obj
-MidPoint.obj : error LNK2005: _main already defined in cache.obj
-Debug/work_1.exe : fatal error LNK1169: one or more multiply defined symbols found
-Ö´ÐÐ link.exe Ê±³ö´í.
 
 
 
 <h3>Results</h3>
-work_1.exe - 1 error(s), 0 warning(s)
+work_1.exe - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

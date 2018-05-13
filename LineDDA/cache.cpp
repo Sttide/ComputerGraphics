@@ -80,7 +80,7 @@ void RenderScene()
 	glFlush();
 	drawLine( 0, 0, 100, 0);
 	glFlush();
-	drawLine( 0, 100, 100, 0);
+	drawLine( 10, 90, 90, 20);
 	glFlush();
 }
 void ChangeSize(GLsizei w,GLsizei h)

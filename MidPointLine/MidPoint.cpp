@@ -34,19 +34,19 @@ void MidPoint(int x0,int y0,int x1,int y1)
 
 	if(b==0) //垂直线
 	{
-		glVertex2f(x, y);
+		glVertex2i(x, y);
 		for(y=y0;y<=y1;y++)
 		{
-			glVertex2f(x,y);
+			glVertex2i(x,y);
 		}
 		glEnd();
 	}
 	else if(a==0) //水平线
 	{
-		glVertex2f(x, y);
+		glVertex2i(x, y);
 		for(x=x0;x<=x1;x++)
 		{
-			glVertex2f(x,y);
+			glVertex2i(x,y);
 		}
 		glEnd();
 	}
@@ -64,7 +64,7 @@ void MidPoint(int x0,int y0,int x1,int y1)
 				{y++; d+=d1; }
 			else
 				{y++; x++; d+=d2;}
-			glVertex2f(x, y);
+			glVertex2i(x, y);
 		 }
 
 		glEnd();
@@ -74,14 +74,14 @@ void MidPoint(int x0,int y0,int x1,int y1)
 		d = 2+a + b;
 		d1=2*a, d2=2 * (a+b);   
 		
-		glVertex2f(x, y);
+		glVertex2i(x, y);
 		while (x<x1)
 		{
 			if (d<0)
 				{x++; y++; d+=d2; }
 			else
 				{x++; d+=d1;}
-			glVertex2f(x, y);
+			glVertex2i(x, y);
 		 }
 
 		glEnd();
@@ -97,7 +97,7 @@ void MidPoint(int x0,int y0,int x1,int y1)
 				{x++; y--; d+=d2; }
 			else
 				{x++; d+=d1;}
-			glVertex2f(x, y);
+			glVertex2i(x, y);
 		 }
 		glEnd();
 	}
@@ -112,7 +112,7 @@ void MidPoint(int x0,int y0,int x1,int y1)
 				{y--; x++; d+=d2; }
 			else
 				{y--; d+=d1;}
-			glVertex2f(x, y);
+			glVertex2i(x, y);
 		 }
 		glEnd();
 	}
