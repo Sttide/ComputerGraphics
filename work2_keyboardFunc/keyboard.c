@@ -6,6 +6,7 @@
 int currentMode = 0;
 const int ModeNums = 6;
 GLfloat angle = 0.0;
+GLfloat omega = 0.10;	//旋转角速度
 void init()
 {
 	glClearColor(1.0,1.0,1.0,1.0);
@@ -17,13 +18,19 @@ void myKey( unsigned char key, int x, int y) //响应ASCII对应键，鼠标的当前x和y位
 		case ' ': currentMode = (currentMode+1)%ModeNums;
 			      glutPostRedisplay();
 				  break;
+		//u,d控制旋转速度
+		case 'u':  omega +=0.10;
+			printf("%d\n",omega);
+				  break;
+		case 'd':  omega -=0.10;
+				  break;
 		case 27:  exit(0);
 	}
 }
 
 void myidle()  
 {  
-    angle += 0.10;  
+    angle += omega;  
     if(angle > 360.0)
 		angle -= 360.0;
     glutPostRedisplay();  
